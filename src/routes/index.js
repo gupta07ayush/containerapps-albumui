@@ -2,12 +2,12 @@ var express = require("express");
 var router = express.Router();
 require("dotenv").config();
 const axios = require("axios");
-const background = process.env.BACKGROUND_COLOR;
+const background = '#000000';
 
 const api = axios.create({
-  baseURL: process.env.API_BASE_URL,
+  baseURL: "https://agcaalbumapi--dlif2uv.proudplant-cb552678.centralindia.azurecontainerapps.io",
   params: {},
-  timeout: process.env.TIMEOUT || 15000,
+  timeout: 15000,
 });
 
 /* GET home page. */
